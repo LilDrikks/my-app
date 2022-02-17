@@ -1,0 +1,19 @@
+- 1. Como eu sei que um usuario esta logando?
+  -- identificar por cookie/localstorage/variavel.
+
+- 2.  Se tiver, tenho que VALIDAR este usuário.
+- 3. se sim libarar acesso se não evitar acesso.
+
+
+Para logar:
+
+- 1. Recebe os dados de login.
+- 2. Envia uma requisição para backend validar estes dados no BD .
+- 3. Validado os dados, salva o token ou alguma referencia ao usuario no browser.
+- 4. Avisa o erro de login e nao salva nada.
+
+Para deslogar:
+
+- 1. Apago a referência que existir no browser.
+-- 
+- 2. Atualizo a página.
