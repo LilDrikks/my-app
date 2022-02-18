@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Brouter} from 'react-router-dom'
+import { AuthProvider } from './contexts/auth/AuthProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Brouter>
-    <App />
-    </Brouter>
+    <AuthProvider> 
+      <Brouter>
+        <App />
+      </Brouter>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
